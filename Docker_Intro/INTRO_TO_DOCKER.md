@@ -21,6 +21,7 @@ Docker is made up of three main components: Docker Engine, Docker Hub, and Docke
 The Docker workflow consists of the following
 
 **1.** Create a Dockerfile and .dockerignore file (if necessary)
+
 **2.** Build the image
 
 > In case you already have a docker image or you are pulling an image from DockerHub and you want to create a container from it, you can skip above steps and go to step 3.
@@ -30,10 +31,12 @@ The Docker workflow consists of the following
 #### 1. Create a Dockerfile and .dockerignore file
 
 The **_Dockerfile_** is a text file that contains all the commands a user could call on the command line to assemble an image. The `Dockerfile` is a set of instructions that Docker will run one by one. Each instruction in the `Dockerfile` creates a layer in the image. When you change the `Dockerfile` and rebuild the image, only those layers that have changed are rebuilt. This provides a much faster build process than building an image from scratch.
+
 [Example Dockerfile](../Dockerfile)
 
 The **_.dockerignore_** file is a text file that contains a list of files and directories that Docker should ignore when building the image. This is useful if you have files that you don’t want to include in the image, such as source code, a large number of files, or secret files.
 Create a new file in the root directory of your project and name it `Dockerfile`. The `Dockerfile` is a text file that contains all the commands a user could call on the command line to assemble an image. The `Dockerfile` is a set of instructions that Docker will run one by one. Each instruction in the `Dockerfile` creates a layer in the image. When you change the `Dockerfile` and rebuild the image, only those layers that have changed are rebuilt. This provides a much faster build process than building an image from scratch.
+
 [Example .dockerignore file](../.dockerignore)
 
 #### 2. Build the image
