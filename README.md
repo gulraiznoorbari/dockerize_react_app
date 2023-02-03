@@ -1,13 +1,7 @@
-<div align="center">
-  <h1>Dockerized React App</h1>
-  <h3>A sample react app running in a docker container.</h3>
-</div>
+# Dockerized React App
+## A Sample React App running in a Docker Container
 
 Refer to the [Getting Started with Docker](./Docker_Intro/INTRO_TO_DOCKER.md) page for a detailed guide on how to get a app up and running in a [Docker](https://docs.docker.com/get-started/overview/) container.
-
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
